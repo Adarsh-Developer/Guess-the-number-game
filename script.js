@@ -42,6 +42,7 @@ function checkGuessValue(guess) {
       guessArray(guess);
       if(guessRemain === 0){
         endGame();
+        hintMessage.innerHTML = `You Loose the actual number is ${randomNumber}.`;
       }
     } else {
       endGame()
