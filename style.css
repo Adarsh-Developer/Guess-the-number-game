@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main__container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #222;
+}
+
+.game__container {
+  background-color: #fff;
+  display: flex;
+  padding: 30px 30px;
+  border: 10px solid rgba(249, 157, 157, 0.714);
+  border-radius: 10px;
+  max-width: 600px;
+  min-width: 300px;
+  width: 100%;
+}
+
+.container {
+  margin: auto;
+}
+
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.game__description {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.game__description p {
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  height: 50px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+#user-guess {
+  border: 2px solid #222;
+  background-color: #fff;
+  outline: none;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.submit {
+  background-color: #222;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hints {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.game__review {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.restart {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  display: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 450px) {
+  .game__container {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+  }
+  
+  .container{
+    width: 100%;
+    /* height: 100%; */
+  }
+}
