@@ -23,8 +23,9 @@ submitBtn.addEventListener("click", function (e) {
     userGuess.value = ''
     if(window.innerWidth >= 600){
       userGuess.focus()
+    } else{
+      userGuess.blur()
     }
-    userGuess.blur()
   }
 });
 
@@ -102,6 +103,8 @@ function reloadGame(){
   userGuess.removeAttribute('disabled');
   if(window.innerWidth >= 600){
     userGuess.focus()
+  } else{
+    userGuess.blur()
   }
   hintMessage.innerHTML = ''
   guessRemain = 10
