@@ -26,6 +26,8 @@ submitBtn.addEventListener("click", function (e) {
     } else{
       userGuess.blur()
     }
+  } else{
+    alert('Please restart the game')
   }
 });
 
@@ -74,14 +76,12 @@ function endGame() {
   userGuess.value = "";
   userGuess.setAttribute("disabled", "");
   playGame = false;
-  submitBtn.setAttribute('disabled', '');
   newGame();
 }
 
 function newGame() {
   restartBtn.style.display = "block";
   restartBtn.addEventListener("click", function () {
-    // location.reload();
     reloadGame()
   });
 }
@@ -94,7 +94,6 @@ function guessArray(guess){
     guessesRemaining();
     displayPreviousGuesses()
   }
-  // console.log(guessArr)
 }
 
 
@@ -112,11 +111,5 @@ function reloadGame(){
   remainingGuess.innerHTML = `Remaining Guesses : ${guessRemain}`;
   previousGuesses.innerHTML = 'Previous Guesses :'
   guessArr = []
-  submitBtn.removeAttribute('disabled');
-  // console.log(guessArr)
-  // console.log(randomNumber); 
   restartBtn.style.display = 'none'
 }
-
-
-// console.log(randomNumber);
